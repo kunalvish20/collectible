@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#050505" />
+  <meta name="description" content="A cinematic GTA VI inspired front-end study built with plain HTML, CSS and JavaScript." />
+  <title>VI — Cinematic Landing Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800;900&family=League+Gothic&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="page-progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#top" aria-label="Home">
+      <span class="brand-mark">R<span>★</span></span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#media">Videos</a>
+      <a href="#story">Explore</a>
+      <a href="#editions">Editions</a>
+      <a href="#news">Newswire</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="preorder preorder--small" href="#editions">Pre-Order Now</a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu__inner">
+      <a href="#media">Videos <span>01</span></a>
+      <a href="#story">Explore <span>02</span></a>
+      <a href="#editions">Editions <span>03</span></a>
+      <a href="#news">Newswire <span>04</span></a>
+      <a class="preorder" href="#editions">Pre-Order Now</a>
+    </div>
+  </div>
+
+  <main id="top">
+    <section class="hero" id="hero">
+      <div class="hero-sticky">
+        <div class="hero-backdrop" aria-hidden="true"></div>
+
+        <div class="poster-stage" id="posterStage" aria-hidden="true">
+          <div class="poster-slice s1"></div>
+          <div class="poster-slice s2"></div>
+          <div class="poster-slice s3"></div>
+          <div class="poster-slice s4"></div>
+          <div class="poster-slice s5"></div>
+          <div class="poster-slice s6"></div>
+          <div class="poster-slice s7"></div>
+          <div class="poster-slice s8"></div>
+          <img class="hero-logo" src="assets/poster-logo.png" alt="" />
+        </div>
+
+        <div class="hero-vignette" aria-hidden="true"></div>
+
+        <div class="hero-copy">
+          <p class="eyebrow">Vice City, USA</p>
+          <h1><span>GRAND</span><span>THEFT</span><span>AUTO</span></h1>
+          <div class="hero-vi">VI</div>
+        </div>
+
+        <div class="hero-bottom">
+          <div>
+            <p>COMING</p>
+            <strong>NOVEMBER 19, 2026</strong>
+          </div>
+          <a href="#media" class="round-link" aria-label="Scroll to media">
+            <span>↓</span>
+          </a>
+        </div>
+
+        <div class="scroll-label">SCROLL FOR MORE CONTENT</div>
+      </div>
+    </section>
+
+    <section class="release-panel section-pad reveal-section">
+      <div class="release-panel__glow"></div>
+      <div class="release-panel__content">
+        <p class="eyebrow dark">Coming</p>
+        <h2>November 19<br />2026</h2>
+        <div class="release-actions">
+          <a class="preorder preorder--dark" href="#editions">Pre-Order Now</a>
+          <div class="platforms">
+            <span>PS5</span>
+            <span>XBOX SERIES X|S</span>
+          </div>
+        </div>
+      </div>
+      <div class="sun-disc" aria-hidden="true"></div>
+    </section>
+
+    <section class="look-section section-pad" id="media">
+      <div class="section-heading reveal">
+        <p class="eyebrow">World Premiere</p>
+        <h2>An Extended Look</h2>
+        <div class="date-lockup">
+          <span>AUGUST 27</span>
+          <span>3 PM ET</span>
+        </div>
+      </div>
+
+      <article class="feature-card reveal-card">
+        <div class="feature-card__media media-feature"></div>
+        <div class="feature-card__shade"></div>
+        <div class="feature-card__content">
+          <div>
+            <p class="kicker">An Extended Look</p>
+            <h3>The city changes after dark.</h3>
+          </div>
+          <button class="play-button" data-video="Extended Look" aria-label="Play extended look"><span>▶</span></button>
+        </div>
+      </article>
+
+      <div class="trailer-grid">
+        <article class="media-card reveal-card">
+          <div class="media-card__image trailer-two"></div>
+          <div class="media-card__overlay"></div>
+          <button class="play-button small" data-video="Trailer 2" aria-label="Play trailer 2"><span>▶</span></button>
+          <div class="media-card__meta"><p>Watch</p><h3>Trailer 2</h3></div>
+        </article>
+        <article class="media-card reveal-card">
+          <div class="media-card__image trailer-one"></div>
+          <div class="media-card__overlay"></div>
+          <button class="play-button small" data-video="Trailer 1" aria-label="Play trailer 1"><span>▶</span></button>
+          <div class="media-card__meta"><p>Watch</p><h3>Trailer 1</h3></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="edition-section section-pad" id="editions">
+      <div class="edition-grid">
+        <article class="edition-card reveal-card">
+          <div class="edition-card__visual edition-art"></div>
+          <div class="edition-card__gradient"></div>
+          <div class="edition-card__content">
+            <p class="eyebrow">Ultimate Edition</p>
+            <h2>Own the city.</h2>
+            <p>An exclusive collection threaded across every corner of the story.</p>
+            <a href="#" class="text-link">Learn More <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="edition-card reveal-card">
+          <div class="edition-card__visual vintage-art"></div>
+          <div class="edition-card__gradient"></div>
+          <div class="edition-card__content">
+            <p class="eyebrow">Pre-Order Bonuses</p>
+            <h2>Vintage<br />Vice City Pack</h2>
+            <p>Flash back to the era when the neon burned brightest.</p>
+            <a href="#" class="text-link">Learn More <span>↗</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="story-section" id="story">
+      <div class="story-sequence" id="storySequence">
+        <div class="story-sticky">
+          <div class="story-visual" id="storyVisual" aria-hidden="true">
+            <div class="story-image story-image--a" style="transform: translate3d(0px, 348.4px, 0px) rotate(-7deg) scale(0.92);"></div>
+            <div class="story-image story-image--b" style="transform: translate3d(0px, 522.6px, 0px) rotate(7deg) scale(0.92);"></div>
+            <div class="story-orb" style="transform: translate3d(0px, 110px, 0px) scale(0.72);"></div>
+
+            <!-- Promo cards use the same visual behavior as the supplied Rockstar section:
+                 the card itself settles from ~.985 scale while the artwork moves upward
+                 and eases back from a slightly enlarged parallax crop. -->
+            <div class="story-promo-grid" id="storyPromoGrid">
+              <div class="story-promo-card story-promo-card--ultimate" data-story-promo="ultimate">
+                <div class="story-promo-card__bg story-promo-card__bg--ultimate"></div>
+                <div class="story-promo-card__shade"></div>
+                <div class="story-promo-card__copy">
+                  <h4>Ultimate Edition</h4>
+                  <p>An exclusive collection of items threaded across all aspects of Jason and Lucia’s story.</p>
+                  <span class="story-promo-link">Learn More <b>→</b></span>
+                </div>
+              </div>
+
+              <div class="story-promo-card story-promo-card--vintage" data-story-promo="vintage">
+                <div class="story-promo-card__bg story-promo-card__bg--vintage"></div>
+                <div class="story-promo-card__shade"></div>
+                <div class="story-promo-card__copy story-promo-card__copy--vintage">
+                  <q>Pre-Order Bonuses</q>
+                  <h4>Vintage<br />Vice City Pack</h4>
+                  <p>Pre-order to get unique benefits that flash back to when the neon burned brightest.</p>
+                  <span class="story-promo-link">Learn More <b>→</b></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="story-visual__wash"></div>
+          </div>
+
+          <article class="story-panel story-panel--copy" data-story-panel="copy">
+            <div class="story-copy">
+              <p class="eyebrow story-eyebrow">Vice City, USA.</p>
+              <h2 class="story-title" aria-label="The darkest side of the sunniest place in America.">
+                <span>The darkest</span>
+                <span>side of the</span>
+                <span>sunniest place</span>
+                <span>in America.</span>
+              </h2>
+              <p class="story-lead">Jason and Lucia have always known the deck is stacked against them. When an easy score goes wrong, they are forced deeper into a criminal conspiracy stretching across the state — and forced to rely on each other more than ever.</p>
+              <span class="story-count">01 / 03</span>
+            </div>
+          </article>
+
+          <a href="#" class="story-panel story-panel--portal story-panel--people" data-story-panel="people">
+            <div class="story-panel__media story-panel__media--people"></div>
+            <div class="story-panel__shade"></div>
+            <div class="story-panel__content">
+              <p>People &amp; Places</p>
+              <h3>Only in<br />Leonida</h3>
+              <span>Explore More ↗</span>
+            </div>
+            <span class="story-count">02 / 03</span>
+          </a>
+
+          <a href="#media" class="story-panel story-panel--portal story-panel--media" data-story-panel="media">
+            <div class="story-panel__media story-panel__media--media"></div>
+            <div class="story-panel__shade"></div>
+            <div class="story-panel__content">
+              <p>Downloads</p>
+              <h3>Media &amp;<br />Artwork</h3>
+              <span>See All ↗</span>
+            </div>
+            <span class="story-count">03 / 03</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="news-section section-pad" id="news">
+      <div class="news-head reveal">
+        <div>
+          <p class="eyebrow">Latest</p>
+          <h2>Featured News</h2>
+        </div>
+        <a href="#" class="text-link">View All <span>↗</span></a>
+      </div>
+
+      <div class="news-list">
+        <article class="news-item reveal-card">
+          <span class="news-no">01</span>
+          <div><p>AUG 6, 2026</p><h3>Grand Theft Auto VI: An Extended Look</h3></div>
+          <span class="news-arrow">↗</span>
+        </article>
+        <article class="news-item reveal-card">
+          <span class="news-no">02</span>
+          <div><p>JUN 24, 2026</p><h3>Pre-Order Grand Theft Auto VI</h3></div>
+          <span class="news-arrow">↗</span>
+        </article>
+        <article class="news-item reveal-card">
+          <span class="news-no">03</span>
+          <div><p>NOV 6, 2025</p><h3>Grand Theft Auto VI Release Update</h3></div>
+          <span class="news-arrow">↗</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="final-banner">
+      <div class="final-banner__bg"></div>
+      <img src="assets/poster-logo.png" alt="Grand Theft Auto VI" />
+      <p>COMING NOVEMBER 19, 2026</p>
+      <a href="#editions" class="preorder">Pre-Order Now</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-brand">R<span>★</span></div>
+      <div class="footer-copy">
+        <p class="eyebrow">Get Updates</p>
+        <h2>Stay on the frequency.</h2>
+      </div>
+      <form class="signup" id="signupForm">
+        <label class="sr-only" for="email">Email address</label>
+        <input id="email" type="email" placeholder="EMAIL ADDRESS" required />
+        <button type="submit">→</button>
+      </form>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-links">
+        <a href="#">Corporate</a><a href="#">Privacy</a><a href="#">Cookie Policy</a><a href="#">Legal</a>
+      </div>
+      <p>Fan-made front-end study. Replace third-party assets before production use.</p>
+    </div>
+  </footer>
+
+  <div class="video-modal" id="videoModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="modalClose" aria-label="Close video">×</button>
+    <div class="video-modal__inner">
+      <p class="eyebrow">Now Playing</p>
+      <h2 id="modalTitle">Trailer</h2>
+      <div class="video-placeholder">
+        <span>▶</span>
+        <p>Connect your own MP4 / YouTube embed here.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">You’re on the list.</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
