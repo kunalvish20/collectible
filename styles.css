@@ -94,7 +94,7 @@ img { max-width: 100%; display: block; }
 .hero-copy { position:absolute; z-index:6; left:clamp(24px,5vw,80px); bottom:15vh; opacity:1; transition:opacity .2s; }
 .eyebrow { margin:0 0 14px; font-size:11px; text-transform:uppercase; font-weight:900; letter-spacing:.18em; }
 .eyebrow.dark { color:#1b0e25; }
-.hero-copy h1 { margin:0; font:400 clamp(66px,12vw,190px)/.73 Anton,sans-serif; letter-spacing:-.035em; text-transform:uppercase; }
+.hero-copy h1 { margin:0; font:400 clamp(66px,12vw,190px)/.8 Anton,sans-serif; letter-spacing:0; text-transform:uppercase; }
 .hero-copy h1 span { display:block; }
 .hero-vi { position:absolute; left:calc(100% + 22px); bottom:-8px; font:400 clamp(88px,15vw,230px)/.75 Anton,sans-serif; color:transparent; -webkit-text-stroke:2px rgba(255,255,255,.8); opacity:.8; }
 .hero-bottom { position:absolute; z-index:6; right:clamp(24px,5vw,80px); bottom:5vh; display:flex; align-items:center; gap:26px; text-align:right; }
@@ -454,7 +454,7 @@ img { max-width: 100%; display: block; }
   .hero-backdrop { background:linear-gradient(150deg,#130d27,#25143a 46%,#07060d); }
   .hero-copy { bottom:23vh; }
   .hero-copy .eyebrow { margin-bottom:8px; }
-  .hero-copy h1 { font-size:20vw; line-height:.77; }
+  .hero-copy h1 { font-size:20vw; line-height:.84; }
   .hero-bottom { bottom:7vh; }
   .hero-bottom strong { font-size:11px; }
   .round-link { width:50px; }
