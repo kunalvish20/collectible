@@ -143,7 +143,11 @@
   }
 
   document.getElementById('addToCart')?.addEventListener('click', () => addToCart(true));
-  document.getElementById('mobileAddToCart')?.addEventListener('click', () => addToCart(true));
+  document.getElementById('mobileAddToCart')?.addEventListener('click', () => {
+    inCart = true;
+    renderQuantity();
+    setCart(true);
+  });
   document.getElementById('buyNow')?.addEventListener('click', () => {
     inCart = true;
     renderQuantity();

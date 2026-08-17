@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#08070a" />
-  <meta name="description" content="Collectible Box — premium collector presentation. ₹9,999." />
-  <title>Collectible Box — ₹9,999</title>
+  <meta name="theme-color" content="#09080c" />
+  <meta name="description" content="Collectible Box - premium collector presentation. INR 9,999." />
+  <title>Collectible Box - INR 9,999</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800;900&family=League+Gothic&display=swap" rel="stylesheet" />
@@ -18,18 +18,14 @@
 
   <header class="site-header product-header" id="siteHeader">
     <a class="brand" href="index.html" aria-label="Back to home"><span class="brand-mark">R<span>★</span></span></a>
-
     <nav class="desktop-nav" aria-label="Product navigation">
-      <a href="#overview">Overview</a>
-      <a href="#inside">What's Inside</a>
       <a href="#details">Details</a>
+      <a href="#reviews">Reviews</a>
       <a href="#faq">FAQ</a>
+      <a href="#related">Related</a>
     </nav>
-
     <div class="header-actions">
-      <button class="header-cart" id="headerCart" type="button" aria-label="Open cart">
-        <span>Cart</span><b id="headerCartCount">0</b>
-      </button>
+      <button class="header-cart" id="headerCart" type="button" aria-label="Open cart"><span>Cart</span><b id="headerCartCount">0</b></button>
       <a class="preorder preorder--small" href="#purchase">Buy Now</a>
       <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu"><span></span><span></span></button>
     </div>
@@ -38,202 +34,91 @@
   <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
     <div class="mobile-menu__inner">
       <a href="index.html">Home <span>01</span></a>
-      <a href="#overview">Overview <span>02</span></a>
-      <a href="#inside">What's Inside <span>03</span></a>
-      <a href="#details">Details <span>04</span></a>
-      <a href="#faq">FAQ <span>05</span></a>
+      <a href="#details">Details <span>02</span></a>
+      <a href="#reviews">Reviews <span>03</span></a>
+      <a href="#faq">FAQ <span>04</span></a>
       <a class="preorder" href="#purchase">Buy for ₹9,999</a>
     </div>
   </div>
 
   <main>
     <section class="product-hero" id="purchase">
-      <div class="product-hero__aurora product-hero__aurora--pink" aria-hidden="true"></div>
-      <div class="product-hero__aurora product-hero__aurora--violet" aria-hidden="true"></div>
-
       <div class="product-shell">
         <div class="product-gallery" aria-label="Collectible Box product gallery">
-          <div class="gallery-topline">
-            <span class="gallery-badge"><i></i> Limited collector run</span>
-            <span class="gallery-index" id="galleryIndex">01 / 03</span>
-          </div>
-
+          <div class="gallery-topline"><span class="gallery-badge"><i></i> In stock for pre-order</span><span class="gallery-index" id="galleryIndex">01 / 03</span></div>
           <div class="product-gallery__stage" id="galleryStage">
             <div class="gallery-panel gallery-panel--box is-active" data-gallery-panel="box" role="tabpanel">
               <div class="collector-scene" aria-hidden="true">
                 <div class="collector-box">
-                  <div class="collector-box__face collector-box__front">
-                    <span class="collector-label">Collector Series / 2026</span>
-                    <img src="assets/poster-logo.png" alt="" />
-                    <span class="collector-bottom">Vice City • Limited Presentation</span>
-                  </div>
+                  <div class="collector-box__face collector-box__front"><span class="collector-label">Collector Series / 2026</span><img src="assets/poster-logo.png" alt="" /><span class="collector-bottom">Vice City / Limited Presentation</span></div>
                   <div class="collector-box__face collector-box__side"><span>COLLECTIBLE BOX</span></div>
-                  <div class="collector-box__edge"></div>
                 </div>
                 <div class="collector-ground"></div>
               </div>
             </div>
-
-            <div class="gallery-panel gallery-panel--art" data-gallery-panel="art" role="tabpanel" aria-hidden="true">
-              <div class="gallery-poster" aria-hidden="true">
-                <div class="gallery-poster__frame"></div>
-                <div class="gallery-poster__label"><span>Archive print</span><strong>Vice City<br />Artwork</strong></div>
-              </div>
-            </div>
-
+            <div class="gallery-panel gallery-panel--art" data-gallery-panel="art" role="tabpanel" aria-hidden="true"><img class="gallery-photo" src="assets/poster-full.jpg" alt="Vice City artwork included with the collectible box" /></div>
             <div class="gallery-panel gallery-panel--detail" data-gallery-panel="detail" role="tabpanel" aria-hidden="true">
-              <div class="detail-composition" aria-hidden="true">
-                <div class="detail-composition__crop"></div>
-                <div class="detail-composition__card">
-                  <span>03 / DETAIL</span>
-                  <strong>Layered<br />collector<br />finish.</strong>
-                </div>
-              </div>
+              <div class="detail-composition" aria-hidden="true"><div class="detail-composition__crop"></div><div class="detail-composition__card"><span>Premium finish</span><strong>Matte shell<br />Gloss hits</strong></div></div>
             </div>
           </div>
-
           <div class="gallery-tabs" role="tablist" aria-label="Choose product view">
-            <button class="gallery-tab is-active" type="button" role="tab" aria-selected="true" data-gallery="box">
-              <span class="gallery-tab__visual gallery-tab__visual--box"></span>
-              <span><b>01</b> Collector Box</span>
-            </button>
-            <button class="gallery-tab" type="button" role="tab" aria-selected="false" data-gallery="art">
-              <span class="gallery-tab__visual gallery-tab__visual--art"></span>
-              <span><b>02</b> Artwork</span>
-            </button>
-            <button class="gallery-tab" type="button" role="tab" aria-selected="false" data-gallery="detail">
-              <span class="gallery-tab__visual gallery-tab__visual--detail"></span>
-              <span><b>03</b> Details</span>
-            </button>
+            <button class="gallery-tab is-active" type="button" role="tab" aria-selected="true" data-gallery="box"><span class="gallery-tab__visual gallery-tab__visual--box"></span><span>Box</span></button>
+            <button class="gallery-tab" type="button" role="tab" aria-selected="false" data-gallery="art"><span class="gallery-tab__visual gallery-tab__visual--art"></span><span>Artwork</span></button>
+            <button class="gallery-tab" type="button" role="tab" aria-selected="false" data-gallery="detail"><span class="gallery-tab__visual gallery-tab__visual--detail"></span><span>Finish</span></button>
           </div>
         </div>
 
         <aside class="product-summary" aria-label="Product purchase information">
-          <div class="product-breadcrumb"><a href="index.html">Home</a><span>•</span><span>Collector Series</span></div>
-          <div class="product-kicker-row">
-            <span class="product-kicker">Limited Edition</span>
-            <span class="product-code">CB-VC-2026</span>
+          <div class="product-breadcrumb"><a href="index.html">Home</a><span>/</span><span>Collector Series</span></div>
+          <div class="product-kicker-row"><span class="product-kicker">Limited Edition</span><span class="availability-pill">Ships protected</span></div>
+          <h1>Collectible Box</h1>
+          <a class="product-rating" href="#reviews" aria-label="4.9 out of 5 from 128 reviews"><span aria-hidden="true">★★★★★</span><small><b>4.9</b> (128 reviews)</small></a>
+
+          <div class="price-card" aria-label="Product price and offer">
+            <div><span class="sale-badge">Save 23%</span><strong class="product-price">₹9,999</strong></div>
+            <p><s>₹12,999</s><span>MRP incl. taxes</span></p>
           </div>
 
-          <h1>Collectible<br />Box</h1>
-
-          <a class="product-rating" href="#reviews" aria-label="4.9 out of 5 from 128 reviews">
-            <span>★★★★★</span><small><b>4.9</b> · 128 reviews</small>
-          </a>
-
-          <div class="product-urgency" aria-label="Product availability">
-            <span>Limited pre-order</span>
-            <strong>Only 250 collector boxes planned for this drop.</strong>
-          </div>
-
-          <div class="product-price-row">
-            <strong class="product-price">₹9,999</strong>
-            <div class="price-meta"><span>MRP · Tax included</span><small>Shipping calculated at checkout</small></div>
-          </div>
-
-          <div class="product-conversion-points" aria-label="Checkout benefits">
-            <span>Secure checkout</span>
-            <span>Protected shipping</span>
-            <span>Taxes included</span>
-          </div>
-
-          <p class="product-description">A presentation-first collector piece inspired by the neon heat of Vice City. Built as a premium display box with layered artwork, archive-style inserts and a shelf-ready silhouette.</p>
-
-          <div class="product-includes" aria-label="Quick product highlights">
-            <div><span>01</span><p><strong>Premium display box</strong><small>Rigid presentation construction</small></p></div>
-            <div><span>02</span><p><strong>Curated art set</strong><small>Collector prints & inserts</small></p></div>
-            <div><span>03</span><p><strong>Protected shipping</strong><small>Dedicated outer packaging</small></p></div>
-          </div>
-
-          <div class="delivery-card">
-            <div class="delivery-card__icon">✓</div>
-            <div><strong>Available for pre-order</strong><p>Limited collector run. Order reservation is confirmed immediately.</p></div>
-          </div>
-
-          <div class="purchase-label"><span>Quantity</span><small>Maximum 10 per order</small></div>
+          <div class="purchase-label"><span>Quantity</span><small>Max 10 per order</small></div>
           <div class="product-purchase">
-            <div class="qty-control" aria-label="Quantity selector">
-              <button type="button" id="qtyMinus" aria-label="Decrease quantity">−</button>
-              <output id="qtyValue" aria-live="polite">1</output>
-              <button type="button" id="qtyPlus" aria-label="Increase quantity">+</button>
-            </div>
-            <button class="product-btn product-btn--primary" id="addToCart" type="button"><span>Add to Cart</span><b>→</b></button>
+            <div class="qty-control" aria-label="Quantity selector"><button type="button" id="qtyMinus" aria-label="Decrease quantity">−</button><output id="qtyValue" aria-live="polite">1</output><button type="button" id="qtyPlus" aria-label="Increase quantity">+</button></div>
+            <button class="product-btn product-btn--primary" id="addToCart" type="button"><span>Add to Cart</span></button>
           </div>
           <button class="product-btn product-btn--buy" id="buyNow" type="button"><span>Buy Now</span><strong id="buyNowPrice">₹9,999</strong></button>
-          <p class="checkout-note">Fast reservation. No payment integration is connected in this demo.</p>
+          <p class="checkout-note">Secure reservation. Checkout is ready to connect to your payment flow.</p>
+
+          <div class="stock-meter" aria-label="Availability"><div><span></span></div><p><strong>Pre-order open.</strong> 37 boxes reserved today.</p></div>
+          <p class="product-description">A shelf-ready collector display box with layered Vice City artwork, archive-style inserts, and protective packaging made for premium presentation.</p>
+
+          <div class="benefit-grid" aria-label="Product benefits">
+            <div><span>✓</span><p><strong>Premium display build</strong><small>Rigid box, matte finish, gloss accents</small></p></div>
+            <div><span>✓</span><p><strong>Collector art set</strong><small>Curated print and insert bundle</small></p></div>
+            <div><span>✓</span><p><strong>Protected delivery</strong><small>Outer shipper for safer transit</small></p></div>
+          </div>
+
+          <div class="delivery-card"><div class="delivery-card__icon">↗</div><div><strong>Estimated delivery: 5-8 business days after dispatch</strong><p>Free protected shipping on this collector box. Tracking is sent after fulfillment.</p></div></div>
 
           <div class="purchase-trust">
-            <div><span>◇</span><p><strong>Secure checkout</strong><small>Protected payment flow</small></p></div>
-            <div><span>↺</span><p><strong>Order support</strong><small>Help when you need it</small></p></div>
+            <div><span>🔒</span><p><strong>Secure checkout</strong><small>Protected payment flow</small></p></div>
+            <div><span>↺</span><p><strong>Support included</strong><small>Help before and after ordering</small></p></div>
             <div><span>▣</span><p><strong>Collector packed</strong><small>Extra transit protection</small></p></div>
           </div>
         </aside>
       </div>
     </section>
 
-    <section class="commerce-strip" aria-label="Product promises">
-      <div><span>LIMITED COLLECTOR RUN</span><i>✦</i><span>₹9,999</span><i>✦</i><span>PREMIUM DISPLAY PACKAGE</span><i>✦</i><span>VICE CITY</span><i>✦</i><span>LIMITED COLLECTOR RUN</span><i>✦</i><span>₹9,999</span><i>✦</i><span>PREMIUM DISPLAY PACKAGE</span><i>✦</i><span>VICE CITY</span></div>
+    <section class="product-band" aria-label="Purchase confidence">
+      <div><strong>Limited run</strong><span>Small batch collector allocation</span></div>
+      <div><strong>Tax included</strong><span>No surprise product pricing</span></div>
+      <div><strong>Premium packed</strong><span>Designed for safer display delivery</span></div>
     </section>
 
-    <section class="editorial-section" id="overview">
-      <div class="editorial-copy reveal-product">
-        <p class="product-kicker product-kicker--dark">Designed to display</p>
-        <h2>Not just<br />packaging.</h2>
-        <p class="editorial-lead">The box is the centerpiece: a graphic object built to live on a shelf, desk or display wall with the same visual impact as the artwork inside.</p>
-        <div class="editorial-stats">
-          <div><strong>03</strong><span>Collector layers</span></div>
-          <div><strong>01</strong><span>Limited presentation</span></div>
-        </div>
-      </div>
-
-      <div class="editorial-visual reveal-product" aria-hidden="true">
-        <div class="editorial-visual__back"></div>
-        <div class="editorial-visual__card editorial-visual__card--one"><span>VICE CITY</span></div>
-        <div class="editorial-visual__card editorial-visual__card--two"><img src="assets/poster-logo.png" alt="" /></div>
-        <span class="editorial-visual__stamp">COLLECTOR<br />SERIES</span>
-      </div>
-    </section>
-
-    <section class="inside-section" id="inside">
-      <header class="inside-head reveal-product">
-        <div><p class="product-kicker">Inside the box</p><h2>Every layer<br />has a story.</h2></div>
-        <p>Three core collector pieces, designed as one cohesive presentation rather than loose extras.</p>
-      </header>
-
-      <div class="inside-grid">
-        <article class="inside-card inside-card--large reveal-product">
-          <div class="inside-card__art inside-card__art--one"></div>
-          <span class="inside-no">01</span>
-          <div class="inside-card__copy"><p>Centerpiece</p><h3>Premium<br />Display Box</h3><span>Rigid construction · layered finish</span></div>
-        </article>
-        <article class="inside-card reveal-product">
-          <div class="inside-card__art inside-card__art--two"></div>
-          <span class="inside-no">02</span>
-          <div class="inside-card__copy"><p>Archive set</p><h3>Art<br />Prints</h3><span>Curated visual collection</span></div>
-        </article>
-        <article class="inside-card reveal-product">
-          <div class="inside-card__art inside-card__art--three"></div>
-          <span class="inside-no">03</span>
-          <div class="inside-card__copy"><p>Collector extras</p><h3>Graphic<br />Inserts</h3><span>Numbered-style ephemera</span></div>
-        </article>
-      </div>
-    </section>
-
-    <section class="detail-showcase" aria-label="Collector finish">
-      <div class="detail-showcase__image reveal-product"></div>
-      <div class="detail-showcase__copy reveal-product">
-        <p class="product-kicker">Presentation matters</p>
-        <h2>Built with<br />visual weight.</h2>
-        <p>Matte surfaces, gloss accents, layered print treatments and a high-contrast palette make the Collectible Box read like a display object from every angle.</p>
-        <a href="#purchase" class="inline-cta">Reserve yours <span>↗</span></a>
-      </div>
-    </section>
-
-    <section class="spec-section" id="details">
-      <div class="spec-title reveal-product">
-        <p class="product-kicker product-kicker--dark">Product details</p>
-        <h2>The<br />spec.</h2>
-        <p>Everything important, clearly presented before you order.</p>
+    <section class="product-section details-section" id="details">
+      <div class="section-copy reveal-product"><p class="product-kicker">Product details</p><h2>Everything in the box.</h2><p>Designed as a complete presentation package rather than a loose bundle of extras.</p></div>
+      <div class="details-grid">
+        <article class="detail-card reveal-product"><div class="detail-card__image detail-card__image--box"></div><h3>Display Box</h3><p>Rigid presentation construction with matte surfaces and gloss accent treatments.</p></article>
+        <article class="detail-card reveal-product"><div class="detail-card__image detail-card__image--prints"></div><h3>Art Prints</h3><p>Curated Vice City artwork selected for display, framing, and collection.</p></article>
+        <article class="detail-card reveal-product"><div class="detail-card__image detail-card__image--inserts"></div><h3>Archive Inserts</h3><p>Graphic ephemera and collector inserts that complete the premium unboxing flow.</p></article>
       </div>
       <dl class="spec-list reveal-product">
         <div><dt>Product</dt><dd>Collectible Box</dd></div>
@@ -242,66 +127,54 @@
         <div><dt>Finish</dt><dd>Premium matte with gloss accents</dd></div>
         <div><dt>Contents</dt><dd>Display box, art print set, collector inserts</dd></div>
         <div><dt>Packaging</dt><dd>Protective outer shipper</dd></div>
-        <div><dt>Availability</dt><dd>Limited pre-order run</dd></div>
       </dl>
     </section>
 
-    <section class="review-section" id="reviews">
-      <div class="review-score reveal-product"><span>4.9</span><div><p>★★★★★</p><strong>Collector approved</strong><small>Based on 128 concept reviews</small></div></div>
-      <blockquote class="reveal-product">“The kind of collector package that looks finished before you even open it.”</blockquote>
-    </section>
-
-    <section class="faq-section" id="faq">
-      <div class="faq-head reveal-product"><p class="product-kicker">Need to know</p><h2>FAQ</h2></div>
-      <div class="faq-list reveal-product">
-        <details open><summary>What is included in the Collectible Box?<span>+</span></summary><p>The presentation includes the premium display box, a curated art print set and collector-style graphic inserts.</p></details>
-        <details><summary>How much does it cost?<span>+</span></summary><p>The Collectible Box is priced at ₹9,999, inclusive of taxes as displayed on this storefront.</p></details>
-        <details><summary>Is it a physical product?<span>+</span></summary><p>Yes. It is presented as a physical collector package with dedicated protective outer shipping.</p></details>
-        <details><summary>Can I order more than one?<span>+</span></summary><p>Yes. Use the quantity selector before adding to cart. This demo allows up to 10 units per order.</p></details>
+    <section class="reviews-section product-section" id="reviews">
+      <div class="section-copy reveal-product"><p class="product-kicker">Reviews</p><h2>Collector approved.</h2></div>
+      <div class="review-layout">
+        <div class="review-score reveal-product"><span>4.9</span><div><p>★★★★★</p><strong>Based on 128 concept reviews</strong><small>Visual quality, packaging and display impact rated highest.</small></div></div>
+        <article class="review-card reveal-product"><p>“The kind of collector package that looks finished before you even open it.”</p><strong>Aarav M.</strong></article>
+        <article class="review-card reveal-product"><p>“Feels like a premium display piece, not just merchandise.”</p><strong>Riya S.</strong></article>
       </div>
     </section>
 
-    <section class="product-closing">
-      <div class="product-closing__bg" aria-hidden="true"></div>
-      <div class="product-closing__content reveal-product">
-        <p class="product-kicker">Collector Series</p>
-        <h2>Own the<br />centerpiece.</h2>
-        <div><strong>₹9,999</strong><a class="product-btn product-btn--light" href="#purchase">Get the Collectible Box <span>↑</span></a></div>
+    <section class="faq-section product-section" id="faq">
+      <div class="section-copy reveal-product"><p class="product-kicker">Need to know</p><h2>FAQ</h2></div>
+      <div class="faq-list reveal-product">
+        <details open><summary>What is included in the Collectible Box?<span>+</span></summary><p>The presentation includes the premium display box, curated art prints and collector-style graphic inserts.</p></details>
+        <details><summary>When will my order ship?<span>+</span></summary><p>This is a pre-order concept page. The delivery card shows the planned delivery window after dispatch.</p></details>
+        <details><summary>Is the packaging protected?<span>+</span></summary><p>Yes. The box is presented with a dedicated protective outer shipper for transit.</p></details>
+        <details><summary>Can I order multiple units?<span>+</span></summary><p>Yes. Use the quantity selector before adding to cart. This demo allows up to 10 units per order.</p></details>
+      </div>
+    </section>
+
+    <section class="related-section product-section" id="related">
+      <div class="section-copy reveal-product"><p class="product-kicker">Complete the shelf</p><h2>Related products.</h2></div>
+      <div class="related-grid">
+        <a class="related-card reveal-product" href="#purchase"><span class="related-card__image related-card__image--one"></span><small>Collector add-on</small><strong>Archive Print Set</strong><p>₹2,499</p></a>
+        <a class="related-card reveal-product" href="#purchase"><span class="related-card__image related-card__image--two"></span><small>Display upgrade</small><strong>Neon Stand Kit</strong><p>₹1,999</p></a>
+        <a class="related-card reveal-product" href="#purchase"><span class="related-card__image related-card__image--three"></span><small>Protection</small><strong>Collector Sleeve</strong><p>₹999</p></a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer product-footer">
-    <div class="footer-top">
-      <div class="footer-brand">R<span>★</span></div>
-      <div class="footer-copy"><p class="eyebrow">Collector Series</p><h2>Bring Vice City home.</h2></div>
-      <a class="preorder" href="#purchase">Buy for ₹9,999</a>
-    </div>
-    <div class="footer-bottom"><div class="footer-links"><a href="index.html">Home</a><a href="#inside">What's Inside</a><a href="#details">Details</a><a href="#faq">FAQ</a></div><p>Concept storefront product page.</p></div>
+    <div class="footer-top"><div class="footer-brand">R<span>★</span></div><div class="footer-copy"><p class="eyebrow">Collector Series</p><h2>Bring Vice City home.</h2></div><a class="preorder" href="#purchase">Buy for ₹9,999</a></div>
+    <div class="footer-bottom"><div class="footer-links"><a href="index.html">Home</a><a href="#details">Details</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a></div><p>Concept storefront product page.</p></div>
   </footer>
 
-  <div class="mobile-buybar" id="mobileBuybar" aria-label="Quick purchase">
-    <div><small>Collectible Box</small><strong id="mobileBuyPrice">₹9,999</strong></div>
-    <button type="button" id="mobileAddToCart">Buy Now</button>
-  </div>
+  <div class="mobile-buybar" id="mobileBuybar" aria-label="Quick purchase"><div><small>Collectible Box</small><strong id="mobileBuyPrice">₹9,999</strong></div><button type="button" id="mobileAddToCart">Buy Now</button></div>
 
   <aside class="cart-drawer" id="cartDrawer" aria-hidden="true" aria-label="Shopping cart">
     <div class="cart-drawer__backdrop" data-close-cart></div>
     <div class="cart-drawer__panel" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
       <div class="cart-drawer__head"><div><small>Your order</small><strong id="cartTitle">Shopping Cart</strong></div><button type="button" data-close-cart aria-label="Close cart">×</button></div>
       <div class="cart-drawer__body">
-        <div class="cart-line">
-          <div class="cart-line__thumb"></div>
-          <div class="cart-line__info"><small>Collector Series</small><p>Collectible Box</p><strong id="cartLinePrice">₹9,999</strong></div>
-          <div class="cart-line__qty"><button type="button" id="cartMinus" aria-label="Decrease cart quantity">−</button><span id="cartQty">1</span><button type="button" id="cartPlus" aria-label="Increase cart quantity">+</button></div>
-        </div>
+        <div class="cart-line"><div class="cart-line__thumb"></div><div class="cart-line__info"><small>Collector Series</small><p>Collectible Box</p><strong id="cartLinePrice">₹9,999</strong></div><div class="cart-line__qty"><button type="button" id="cartMinus" aria-label="Decrease cart quantity">−</button><span id="cartQty">1</span><button type="button" id="cartPlus" aria-label="Increase quantity">+</button></div></div>
         <div class="cart-assurance"><span>✓</span><p><strong>Reserved collector allocation</strong><small>Your selected quantity is held when checkout begins.</small></p></div>
       </div>
-      <div class="cart-drawer__footer">
-        <div class="cart-subtotal"><div><span>Subtotal</span><small>Taxes included</small></div><strong id="cartTotal">₹9,999</strong></div>
-        <button class="product-btn product-btn--primary cart-checkout" id="checkoutBtn" type="button">Continue to Checkout <span>→</span></button>
-        <button class="cart-continue" type="button" data-close-cart>Continue shopping</button>
-      </div>
+      <div class="cart-drawer__footer"><div class="cart-subtotal"><div><span>Subtotal</span><small>Taxes included</small></div><strong id="cartTotal">₹9,999</strong></div><button class="product-btn product-btn--primary cart-checkout" id="checkoutBtn" type="button">Continue to Checkout <span>→</span></button><button class="cart-continue" type="button" data-close-cart>Continue shopping</button></div>
     </div>
   </aside>
 
